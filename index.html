@@ -25,27 +25,47 @@
 
 
 
-
-    <div data-role="page">
+    <!-- Home page begins -->
+    <div data-role="page" id="homepage">
         <div data-role="header">
-            Some Header
+            <h1>Test mobile page</h1>
         </div>
-        <div data-role="content">
-            Some Content
+        <div data-role="main" class="ui-content" id="content">
+            <h2>Some article</h2>
+            <img src="img/city250-1.jpg" alt="city">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam molestias magnam deserunt asperiores excepturi perspiciatis nisi quae aspernatur, consequatur amet. Numquam quisquam fuga, perferendis sint culpa. Delectus quia, nostrum veritatis.</p>
+            <a href="#subpage-1">Go to Page Two</a>
         </div>
         <div data-role="footer" data-position="fixed">
-            Some Footer
+            <h2>footer</h2>
         </div>
     </div>
+    <!-- Home page ends -->
+
+    <!-- Deep Page 1 begins -->
+    <div data-role="page" id="subpage-1">
+        <div data-role="header">
+            <h1>Test mobile page</h1>
+        </div>
+        <div data-role="main" class="ui-content" id="content">
+            <h2>Another article</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam molestias magnam deserunt asperiores excepturi perspiciatis nisi quae aspernatur, consequatur amet. Numquam quisquam fuga, perferendis sint culpa. Delectus quia, nostrum veritatis.</p>
+            <img src="img/city250-2.jpg" alt="city">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a href="#homepage">Go to Page Two</a>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h2>footer</h2>
+        </div>
+    </div>
+    <!-- Deep Page 1 ends -->
 
 
 
 
 
 
-
-
-
+    
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
