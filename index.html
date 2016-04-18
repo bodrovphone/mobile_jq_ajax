@@ -27,14 +27,20 @@
 
     <!-- Home page begins -->
     <div data-role="page" id="homepage">
-        <div data-role="header">
+        <div class="custom-header" data-role="header" data-position="fixed">
             <h1>Test mobile page</h1>
         </div>
         <div data-role="main" class="ui-content" id="content">
             <h2>Some article</h2>
-            <img src="img/city250-1.jpg" alt="city">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam molestias magnam deserunt asperiores excepturi perspiciatis nisi quae aspernatur, consequatur amet. Numquam quisquam fuga, perferendis sint culpa. Delectus quia, nostrum veritatis.</p>
-            <a href="#subpage-1">Go to Page Two</a>
+            <img class="custom-thumbnail" src="img/city250-1.jpg" alt="city">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam molestias magnam deserunt asperiores excepturi perspiciatis nisi quae aspernatur, consequatur amet. Numquam quisquam fuga, perferendis sint culpa. Delectus quia, nostrum veritatis&#133;</p>
+            <a href="#subpage-1" data-transition="slide" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">READ MORE &#10161</a>
+            <hr>
+            <h2>Some article</h2>
+            <img class="custom-thumbnail" src="img/city250-1.jpg" alt="city">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam molestias magnam deserunt asperiores excepturi perspiciatis nisi quae aspernatur, consequatur amet. Numquam quisquam fuga, perferendis sint culpa. Delectus quia, nostrum veritatis&#133;</p>
+            <a href="#subpage-1" data-transition="slide" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">READ MORE &#10161</a>
+            <hr>
         </div>
         <div data-role="footer" data-position="fixed">
             <h2>footer</h2>
@@ -44,7 +50,7 @@
 
     <!-- Deep Page 1 begins -->
     <div data-role="page" id="subpage-1">
-        <div data-role="header">
+        <div class="custom-header" data-role="header" data-position="fixed">
             <h1>Test mobile page</h1>
         </div>
         <div data-role="main" class="ui-content" id="content">
@@ -52,7 +58,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam molestias magnam deserunt asperiores excepturi perspiciatis nisi quae aspernatur, consequatur amet. Numquam quisquam fuga, perferendis sint culpa. Delectus quia, nostrum veritatis.</p>
             <img src="img/city250-2.jpg" alt="city">
             <p>Lorem ipsum dolor sit amet.</p>
-            <a href="#homepage">Go to Page Two</a>
+            <a href="#homepage" data-transition="slide" data-direction="reverse" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">BACK &#10161</a>
         </div>
         <div data-role="footer" data-position="fixed">
             <h2>footer</h2>

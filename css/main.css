@@ -1,0 +1,9 @@
+
+/*Home Page*/
+.custom-header {
+    background: #8395E4 !important;
+}
+.custom-thumbnail {
+    max-width: 250px;
+    width: 40%;
+}
