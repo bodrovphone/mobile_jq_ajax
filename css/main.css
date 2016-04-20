@@ -4,8 +4,17 @@
     background: #8395E4 !important;
 }
 .custom-thumbnail {
-    max-width: 250px;
+    max-width: 120px;
     width: 40%;
     float: left;
     margin: 0 10px 10px 0;
+}
+a.custom-link {
+    color: rgb(75, 216, 158) !important;
+}
+.custom-text {
+    color: #8395E4;
+}
+section, hr {
+    clear: both;
 }

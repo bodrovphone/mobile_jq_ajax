@@ -31,16 +31,42 @@
             <h1>Test mobile page</h1>
         </div>
         <div data-role="main" class="ui-content" id="content">
-            <h2>Some article</h2>
-            <img class="custom-thumbnail" src="img/city250-1.jpg" alt="city">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam molestias magnam deserunt asperiores excepturi perspiciatis nisi quae aspernatur, consequatur amet. Numquam quisquam fuga, perferendis sint culpa. Delectus quia, nostrum veritatis&#133;</p>
-            <a href="#subpage-1" data-transition="slide" class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-arrow-r ui-btn-icon-right">READ MORE</a>
-            <hr>
-            <h2>Some article</h2>
-            <img class="custom-thumbnail" src="img/city250-2.jpg" alt="city">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam molestias magnam deserunt asperiores excepturi perspiciatis nisi quae aspernatur, consequatur amet. Numquam quisquam fuga, perferendis sint culpa. Delectus quia, nostrum veritatis&#133;</p>
-            <a href="#subpage-1" data-transition="slide" class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-arrow-r ui-btn-icon-right">READ MORE</a>
-            <hr>
+            <section>
+                <h2>Some article</h2>
+                <a href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="pop"><img class="custom-thumbnail" src="img/city250-1.jpg" alt="city"></a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam molestias magnam deserunt <a href="#myPopup" data-rel="popup" class="custom-link" data-transition="turn">click me</a> excepturi perspiciatis nisi quae aspernatur, consequatur amet. Numquam quisquam fuga, perferendis sint culpa. Delectus quia, nostrum veritatis&#133;</p>
+                <section>
+                    <a href="#subpage-1" data-transition="slide" class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-arrow-r ui-btn-icon-right">READ MORE</a>
+                </section>
+                <div data-role="popup" id="myPopup" class="ui-content" data-arrow="t">
+                  <h3>I'm popup</h3>
+                  <p>The "ui-content" class is especially useful when you have a popup with <span class="custom-text">styled text</span>, and want the edges and corners to look extra clean and sleek. <strong>Note:</strong> The text will wrap to multiple lines if needed.</p>
+                </div>
+                <div data-role="popup" id="myPopupDialog" data-overlay-theme="b">
+                  <div data-role="header"><h1>City Album..</h1></div>
+                  <div data-role="main" class="ui-content"><img src="img/city250-1.jpg" alt="city"></div>
+                  <div data-role="footer"><h1>City Album..</h1></div>
+                </div>
+                <hr>
+            </section>
+            <section>
+                <h2>Some article</h2>
+                <a href="#myPopupDialog2" data-rel="popup" data-position-to="window" data-transition="flip"><img class="custom-thumbnail" src="img/city250-2.jpg" alt="city"></a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam molestias magnam deserunt asperiores excepturi perspiciatis nisi quae aspernatur, consequatur amet. <a href="#myPopup2" data-rel="popup" class="custom-link" data-transition="slidedown">click me too</a> quisquam fuga, perferendis sint culpa. Delectus quia, nostrum veritatis&#133;</p>
+                <section>
+                    <a href="#subpage-1" data-transition="slide" class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-arrow-r ui-btn-icon-right">READ MORE</a>
+                </section>
+                <div data-role="popup" id="myPopup2" class="ui-content" data-arrow="b">
+                  <h3>Cool yeah?</h3>
+                  <p>The "ui-content" class is especially useful when you have a popup with <span class="custom-text">WOW!</span>, and want the edges and corners to look extra clean and sleek. <strong>Note:</strong> The text will wrap to multiple lines if needed.</p>
+                </div>
+                <div data-role="popup" id="myPopupDialog2" data-overlay-theme="b">
+                  <div data-role="header"><h1>City Album..</h1></div>
+                  <div data-role="main" class="ui-content"><img src="img/city250-2.jpg" alt="city"></div>
+                  <div data-role="footer"><h1>City Album..</h1></div>
+                </div>
+                <hr>
+            </section>
         </div>
         <div data-role="footer" data-position="fixed">
             <h2>footer</h2>
@@ -54,11 +80,20 @@
             <h1>Test mobile page</h1>
         </div>
         <div data-role="main" class="ui-content" id="content">
-            <h2>Another article</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam molestias magnam deserunt asperiores excepturi perspiciatis nisi quae aspernatur, consequatur amet. Numquam quisquam fuga, perferendis sint culpa. Delectus quia, nostrum veritatis.</p>
-            <img src="img/city250-3.jpg" alt="city">
-            <p>Lorem ipsum dolor sit amet.</p>
-            <a href="#homepage" data-transition="slide" data-direction="reverse" class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">BACK</a>
+            <section>
+                <h2>Another article</h2>
+                <a href="#myPopupDialog3" data-rel="popup" data-position-to="window" data-transition="slidefade"><img class="custom-thumbnail" src="img/city250-3.jpg" alt="city"></a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam molestias magnam deserunt asperiores excepturi perspiciatis nisi quae aspernatur, consequatur amet. Numquam quisquam fuga, perferendis sint culpa. Delectus quia, nostrum veritatis.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <div data-role="popup" id="myPopupDialog3" data-overlay-theme="b">
+                  <div data-role="header"><h1>City Album..</h1></div>
+                  <div data-role="main" class="ui-content"><img src="img/city250-3.jpg" alt="city"></div>
+                  <div data-role="footer"><h1>City Album..</h1></div>
+                </div>
+                <section>
+                    <a href="#homepage" data-transition="slide" data-direction="reverse" class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">BACK</a>
+                </section>
+            </section>
         </div>
         <div data-role="footer" data-position="fixed">
             <h2>footer</h2>
