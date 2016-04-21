@@ -15,6 +15,18 @@ a.custom-link {
 .custom-text {
     color: #8395E4;
 }
+.custom-button {
+    background-color: rgb(75, 216, 158) !important;
+}
 section, hr {
     clear: both;
+}
+body .custom-page {
+   background-color: #D2E0DC;
+}
+#footer {
+    background-color: #ADB8E8;
+}
+#homepage .ui-content{
+    padding: 1em;
 }
