@@ -27,7 +27,13 @@
 
     <!-- Home page begins -->
     <div data-role="page" id="homepage" class="custom-page">
+        <div data-role="panel" id="myPanel" data-display="overlay" data-position-fixed="true"> 
+            <h2>Panel Header..</h2>
+            <p>Some text in the panel..</p>
+            <a href="#homepage" data-rel="close" class="ui-btn ui-btn-inline">Close Panel</a>
+        </div> 
         <div class="custom-header" data-role="header" data-position="fixed" data-fullscreen="true">
+            <a href="#myPanel" class="ui-btn ui-icon-bars ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon custom-button ui-btn-icon-notext">Open Panel</a>
             <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon custom-button ui-btn-icon-notext">Home</a>
             <h1 id="home">Test mobile page</h1>
         </div>

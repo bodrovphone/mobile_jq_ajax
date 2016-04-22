@@ -24,9 +24,9 @@ section, hr {
 body .custom-page {
    background-color: #D2E0DC;
 }
-#footer {
+#footer, #subpage-1 .ui-footer {
     background-color: #ADB8E8;
 }
-#homepage .ui-content{
+#homepage .ui-content, #subpage-1 .ui-content {
     padding: 1em;
 }
