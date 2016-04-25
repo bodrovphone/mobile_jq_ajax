@@ -83,15 +83,32 @@
 
     <!-- Deep Page 1 begins -->
     <div data-role="page" id="subpage-1" class="custom-page">
+        <div data-role="panel" id="myPanel2" data-display="overlay" data-position-fixed="true"> 
+            <h2>Panel Header..</h2>
+            <p>Some text in the panel..</p>
+            <a href="#subpage-1" data-rel="close" class="ui-btn ui-btn-inline">Close Panel</a>
+        </div>
         <div class="custom-header" data-role="header" data-position="fixed" data-fullscreen="true">
-            <h1>Test mobile page</h1>
+            <a href="#myPanel2" class="ui-btn ui-icon-bars ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon custom-button ui-btn-icon-notext">Open Panel</a>
+            <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon custom-button ui-btn-icon-notext">Home</a>
+            <h1 id="home">Sub page 1</h1>
         </div>
         <div data-role="main" class="ui-content" id="content">
             <section>
                 <h2>Another article</h2>
                 <a href="#myPopupDialog3" data-rel="popup" data-position-to="window" data-transition="slidefade"><img class="custom-thumbnail" src="img/city250-3.jpg" alt="city"></a>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam molestias magnam deserunt asperiores excepturi perspiciatis nisi quae aspernatur, consequatur amet. Numquam quisquam fuga, perferendis sint culpa. Delectus quia, nostrum veritatis.</p>
+                <p>Deleniti maiores iure sequi dolores quis, harum facilis possimus reprehenderit debitis commodi ipsa error saepe, facere voluptatum. Nisi eius dolorum quam autem similique facilis fuga quo illo. Dicta, repudiandae, consequatur.</p>
+                <p>Totam alias provident voluptas fugiat a inventore itaque doloremque. Sit qui earum nobis ut eius nihil, minus aliquam! Ipsam et cupiditate mollitia quo eveniet ipsum deserunt sunt vel, velit, culpa?</p>
                 <p>Lorem ipsum dolor sit amet.</p>
+                <div data-role="collapsible">
+                    <h3>I'm collapsible</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni optio labore unde, incidunt quae consectetur fugit, quis cumque, maiores tempore est commodi laborum esse quos placeat nisi quas blanditiis iure.</p>
+                    <div data-role="collapsible">
+                        <h4>I'm also collapsible</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni optio labore unde, incidunt quae consectetur fugit, quis cumque, maiores tempore est commodi laborum esse quos placeat nisi quas blanditiis iure.</p>
+                    </div>
+                </div>
                 <div data-role="popup" id="myPopupDialog3" data-overlay-theme="b">
                   <div data-role="header"><h1>City Album..</h1></div>
                   <div data-role="main" class="ui-content"><img src="img/city250-3.jpg" alt="city"></div>
