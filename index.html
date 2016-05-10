@@ -29,16 +29,17 @@
     <div data-role="page" id="homepage" class="custom-page">
         <div data-role="panel" id="myPanel" data-display="overlay" data-position-fixed="true"> 
             <ul data-role="listview">
-              <li data-role="list-divider" data-rel="close">Panel Header..</li>
-              <li><a href="#" data-rel="close" class="ui-icon-home">Cities/Home</a></li>
-              <li><a href="#">England</a></li>
-              <li><a href="#">Spain</a></li>
-              <li><a href="#">Germany</a></li>
-              <li><a href="#">France</a></li>
+              <li data-role="list-divider" data-rel="close">First Devider..</li>
+              <li><a href="#" data-rel="close" class="ui-icon-home">Home</a></li>
+              <li><a href="#"><img src="img/england-icon.png" alt="England" class="ui-li-icon">England</a></li>
+              <li><a href="#"><img src="img/spain-icon.png" alt="Spain" class="ui-li-icon">Spain</a></li>
+              <li><a href="#"><img src="img/Germany-icon.png" alt="Germany" class="ui-li-icon">Germany</a></li>
+              <li><a href="#"><img src="img/France-icon.png" alt="France" class="ui-li-icon">France</a></li>
               <li data-role="list-divider" data-rel="close">Second Devider..</li>
-              <li><a href="#">Portugal</a></li>
-              <li><a href="#">Belgium</a></li>
-              <li><a href="#">Netherlands</a></li>
+              <li><a href="#"><img src="img/Portugal-icon.png" alt="Portugal" class="ui-li-icon">Portugal</a></li>
+              <li><a href="#"><img src="img/Belgium-icon.png" alt="Belgium" class="ui-li-icon">Belgium</a></li>
+              <li><a href="#"><img src="img/Netherlands-icon.png" alt="Netherlands" class="ui-li-icon">Netherlands</a></li>
+              <li><a href="404.html">404...</a></li>
             </ul>
         </div> 
         <div class="custom-header" data-role="header" data-position="fixed" data-fullscreen="true">
@@ -83,7 +84,10 @@
                 </div>
                 <hr>
             </section>
-            <table data-role="table" data-mode="columntoggle" class="ui-responsive ui-shadow" id="myTable">
+            <form>
+              <input id="filterTable-input" data-type="search" placeholder="Search For Customers...">
+            </form>
+            <table data-role="table" data-mode="columntoggle" class="ui-responsive ui-shadow" id="myTable" data-input="#filterTable-input" data-filter="true">
               <thead>
                 <tr>
                   <th data-priority="3">CustomerID</th>
@@ -135,16 +139,17 @@
     <div data-role="page" id="subpage-1" class="custom-page">
         <div data-role="panel" id="myPanel2" data-display="overlay" data-position-fixed="true"> 
            <ul data-role="listview">
-              <li data-role="list-divider" data-rel="close">Panel Header..</li>
-              <li><a href="#" data-rel="close" class="ui-icon-home">Cities/Home</a></li>
-              <li><a href="#">England</a></li>
-              <li><a href="#">Spain</a></li>
-              <li><a href="#">Germany</a></li>
-              <li><a href="#">France</a></li>
+              <li data-role="list-divider" data-rel="close">First Devider..</li>
+              <li><a href="#" data-rel="close" class="ui-icon-home">Home</a></li>
+              <li><a href="#"><img src="img/england-icon.png" alt="England" class="ui-li-icon">England</a></li>
+              <li><a href="#"><img src="img/spain-icon.png" alt="Spain" class="ui-li-icon">Spain</a></li>
+              <li><a href="#"><img src="img/Germany-icon.png" alt="Germany" class="ui-li-icon">Germany</a></li>
+              <li><a href="#"><img src="img/France-icon.png" alt="France" class="ui-li-icon">France</a></li>
               <li data-role="list-divider" data-rel="close">Second Devider..</li>
-              <li><a href="#">Portugal</a></li>
-              <li><a href="#">Belgium</a></li>
-              <li><a href="#">Netherlands</a></li>
+              <li><a href="#"><img src="img/Portugal-icon.png" alt="Portugal" class="ui-li-icon">Portugal</a></li>
+              <li><a href="#"><img src="img/Belgium-icon.png" alt="Belgium" class="ui-li-icon">Belgium</a></li>
+              <li><a href="#"><img src="img/Netherlands-icon.png" alt="Netherlands" class="ui-li-icon">Netherlands</a></li>
+              <li><a href="404.html">404...</a></li>
             </ul>
         </div>
         <div class="custom-header" data-role="header" data-position="fixed" data-fullscreen="true">
@@ -162,10 +167,19 @@
                 <p>Lorem ipsum dolor sit amet.</p>
                 <div data-role="collapsible">
                     <h3>I'm collapsible</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni optio labore unde, incidunt quae consectetur fugit, quis cumque, maiores tempore est commodi laborum esse quos placeat nisi quas blanditiis iure.</p>
+                    <ul data-role="listview">
+                          <li><a href="#"><img src="img/england-icon.png" alt="England" class="ui-li-icon">England</a></li>
+                          <li><a href="#"><img src="img/spain-icon.png" alt="Spain" class="ui-li-icon">Spain</a></li>
+                          <li><a href="#"><img src="img/Germany-icon.png" alt="Germany" class="ui-li-icon">Germany</a></li>
+                          <li><a href="#"><img src="img/France-icon.png" alt="France" class="ui-li-icon">France</a></li>
+                        </ul>
                     <div data-role="collapsible">
                         <h4>I'm also collapsible</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni optio labore unde, incidunt quae consectetur fugit, quis cumque, maiores tempore est commodi laborum esse quos placeat nisi quas blanditiis iure.</p>
+                        <ul data-role="listview">
+                          <li><a href="#"><img src="img/Portugal-icon.png" alt="Portugal" class="ui-li-icon">Portugal</a></li>
+                          <li><a href="#"><img src="img/Belgium-icon.png" alt="Belgium" class="ui-li-icon">Belgium</a></li>
+                          <li><a href="#"><img src="img/Netherlands-icon.png" alt="Netherlands" class="ui-li-icon">Netherlands</a></li>
+                        </ul>
                     </div>
                 </div>
                 <div data-role="popup" id="myPopupDialog3" data-overlay-theme="b">
