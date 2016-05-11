@@ -18,6 +18,9 @@ a.custom-link {
 .custom-button {
     background-color: rgb(75, 216, 158) !important;
 }
+#custom-form label {
+    margin: 5px 2px;
+}
 section, hr {
     clear: both;
 }
