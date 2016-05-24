@@ -29,13 +29,13 @@
     <div data-role="page" id="homepage" class="custom-page">
         <div data-role="panel" id="myPanel" data-display="overlay" data-position-fixed="true"> 
             <ul data-role="listview">
-              <li data-role="list-divider" data-rel="close">First Devider..</li>
+              <li data-role="list-divider" data-rel="close" class="cutom-devider">First Devider..</li>
               <li><a href="#" data-rel="close" class="ui-icon-home">Home</a></li>
               <li><a href="#"><img src="img/england-icon.png" alt="England" class="ui-li-icon">England</a></li>
               <li><a href="#"><img src="img/spain-icon.png" alt="Spain" class="ui-li-icon">Spain</a></li>
               <li><a href="#"><img src="img/Germany-icon.png" alt="Germany" class="ui-li-icon">Germany</a></li>
               <li><a href="#"><img src="img/France-icon.png" alt="France" class="ui-li-icon">France</a></li>
-              <li data-role="list-divider" data-rel="close">Second Devider..</li>
+              <li data-role="list-divider" data-rel="close" class="cutom-devider">Second Devider..</li>
               <li><a href="#"><img src="img/Portugal-icon.png" alt="Portugal" class="ui-li-icon">Portugal</a></li>
               <li><a href="#"><img src="img/Belgium-icon.png" alt="Belgium" class="ui-li-icon">Belgium</a></li>
               <li><a href="#"><img src="img/Netherlands-icon.png" alt="Netherlands" class="ui-li-icon">Netherlands</a></li>
@@ -223,17 +223,32 @@
         <div data-role="main" class="ui-content">
             <section>
                 <h2>Form Example</h2>
-                <form action="" method="" id="custom-form">
+                <form action="" method="post" id="custom-form">
                     <div class="ui-field-contain">
                         <label for="yname">First name:</label>
                         <input type="text" name="yname" id="yname" placeholder="Urgen Klopp..." data-clear-btn="true">
                         <label for="budget">Your budget:</label>
-                        <input type="text" name="budget" id="budget" placeholder="500..." data-clear-btn="true">
-                        <label for="dateto">Going to:</label>
+                        <input type="range" id="budget" name="budget" value="1000" min="100" max="5000" step="100" data-highlight="true">
+                        <label for="switch">Include breakfast?</label>
+    <input type="checkbox" data-role="flipswitch" name="switch" id="switch" data-on-text="Yes" data-off-text="No">
+                        <label for="dateto">Starting on:</label>
                         <input type="date" name="dateto" id="dateto">
-                        <label for="dateb">Going back:</label>
-                        <input type="date" name="dateb" id="dateb">
                     </div>
+                </form>
+                <form action="">
+                    <fieldset>
+                        <label for="destination">You're passing the following countries:</label>
+                        <select name="destination" id="destination" data-native-menu="false" multiple>
+                            <option>Country</option>
+                            <option value="England">England</option>
+                            <option value="Spain">Spain</option>
+                            <option value="Germany">Germany</option>
+                            <option value="France">France</option>
+                            <option value="Portugal">Portugal</option>
+                            <option value="Belgium">Belgium</option>
+                        </select>
+                    </fieldset>
+                    <input type="submit" data-inline="true" value="Reserve">
                 </form>
                 <section>
                     <a href="#homepage" data-transition="slide" data-direction="reverse" class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">BACK</a>

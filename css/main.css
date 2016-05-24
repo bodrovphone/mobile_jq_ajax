@@ -15,11 +15,18 @@ a.custom-link {
 .custom-text {
     color: #8395E4;
 }
-.custom-button {
+.custom-button, .ui-page-theme-a .ui-slider-track .ui-btn-active {
     background-color: rgb(75, 216, 158) !important;
 }
 #custom-form label {
     margin: 5px 2px;
+}
+a.ui-btn.ui-btn-icon-right.ui-icon-carat-r {
+    background-color: #B1BCE7;
+}
+
+li.ui-li-divider.ui-bar-inherit {
+    background-color: #D2E0DC !important;
 }
 section, hr {
     clear: both;
