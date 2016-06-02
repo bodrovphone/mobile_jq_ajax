@@ -44,7 +44,7 @@ body .custom-page {
     max-width: 800px;
     margin: 0 auto;
 }
-/*section p {
-    max-height: 160px;
+.wrapper {
+    max-height: 350px;
     overflow: hidden;
-}*/
+}
