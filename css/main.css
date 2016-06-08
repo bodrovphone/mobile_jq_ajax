@@ -18,9 +18,16 @@ a.custom-link {
 .custom-button, .ui-page-theme-a .ui-slider-track .ui-btn-active {
     background-color: rgb(75, 216, 158) !important;
 }
+.custom-button2 {
+    background-color: rgba(126, 216, 75, 0.34) !important;
+    }
 #custom-form label {
     margin: 5px 2px;
 }
+#myPopupDialog .ui-header,#myPopupDialog .ui-footer, #myPopupDialog2 .ui-header,#myPopupDialog2 .ui-footer {
+    background-color: #D2E0DC;
+}
+
 a.ui-btn.ui-btn-icon-right.ui-icon-carat-r {
     background-color: #B1BCE7;
 }
