@@ -18,7 +18,7 @@ a.custom-link {
 .custom-button, .ui-page-theme-a .ui-slider-track .ui-btn-active {
     background-color: rgb(75, 216, 158) !important;
 }
-.custom-button2 {
+.custom-button2, .ui-table-columntoggle-btn {
     background-color: rgba(126, 216, 75, 0.34) !important;
     }
 #custom-form label {
@@ -26,6 +26,9 @@ a.custom-link {
 }
 #myPopupDialog .ui-header,#myPopupDialog .ui-footer, #myPopupDialog2 .ui-header,#myPopupDialog2 .ui-footer {
     background-color: #D2E0DC;
+}
+.ui-body-a, .ui-page-theme-a .ui-body-inherit, html .ui-bar-a .ui-body-inherit, html .ui-body-a .ui-body-inherit, html body .ui-group-theme-a .ui-body-inherit, html .ui-panel-page-container-a {
+    background-color: rgba(232, 244, 233, 0.98) !important;
 }
 
 a.ui-btn.ui-btn-icon-right.ui-icon-carat-r {
