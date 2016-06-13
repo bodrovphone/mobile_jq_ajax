@@ -7,7 +7,7 @@
     max-width: 120px;
     width: 40%;
     float: left;
-    margin: 0 10px 10px 0;
+    margin-right: 10px;
 }
 a.custom-link {
     color: rgb(75, 216, 158) !important;
@@ -24,8 +24,11 @@ a.custom-link {
 #custom-form label {
     margin: 5px 2px;
 }
-#myPopupDialog .ui-header,#myPopupDialog .ui-footer, #myPopupDialog2 .ui-header,#myPopupDialog2 .ui-footer {
-    background-color: #D2E0DC;
+#myPopupDialog3 .ui-header,#myPopupDialog .ui-footer, #myPopupDialog2 .ui-header,#myPopupDialog2 .ui-footer {
+    background-color: #ADB8E8;
+}
+#myPopupDialog .ui-header {
+
 }
 .ui-body-a, .ui-page-theme-a .ui-body-inherit, html .ui-bar-a .ui-body-inherit, html .ui-body-a .ui-body-inherit, html body .ui-group-theme-a .ui-body-inherit, html .ui-panel-page-container-a {
     background-color: rgba(232, 244, 233, 0.98) !important;
@@ -55,6 +58,6 @@ body .custom-page {
     margin: 0 auto;
 }
 .wrapper {
-    max-height: 350px;
     overflow: hidden;
+    max-height: 358px;
 }
