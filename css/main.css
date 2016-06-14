@@ -24,11 +24,8 @@ a.custom-link {
 #custom-form label {
     margin: 5px 2px;
 }
-#myPopupDialog3 .ui-header,#myPopupDialog .ui-footer, #myPopupDialog2 .ui-header,#myPopupDialog2 .ui-footer {
+#myPopupDialog .ui-header,#myPopupDialog .ui-footer, #myPopupDialog2 .ui-header,#myPopupDialog2 .ui-footer, #myPopupDialog3 .ui-header {
     background-color: #ADB8E8;
-}
-#myPopupDialog .ui-header {
-
 }
 .ui-body-a, .ui-page-theme-a .ui-body-inherit, html .ui-bar-a .ui-body-inherit, html .ui-body-a .ui-body-inherit, html body .ui-group-theme-a .ui-body-inherit, html .ui-panel-page-container-a {
     background-color: rgba(232, 244, 233, 0.98) !important;
@@ -59,5 +56,26 @@ body .custom-page {
 }
 .wrapper {
     overflow: hidden;
-    max-height: 358px;
+    max-height: 22em;
 }
+
+/*SubPage-1 specific styles*/
+.ui-collapsible-inset .ui-collapsible-heading-toggle {
+  background-color: rgba(232, 244, 233, 0.98) !important
+}
+a.ui-btn.ui-btn-inline.ui-corner-all.ui-shadow.ui-icon-back.ui-btn-icon-left {
+    background-color: rgba(126, 216, 75, 0.34);
+}
+
+
+
+
+
+
+/*Media Queries*/
+
+/*@media screen and (min-width: 450px) {
+    #homepage {
+        display: none !important;
+    }
+}*/
